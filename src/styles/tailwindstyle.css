@@ -546,16 +546,12 @@ video {
   order: 2;
 }
 
-.order-3 {
-  order: 3;
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .col-span-2 {
   grid-column: span 2 / span 2;
-}
-
-.col-span-1 {
-  grid-column: span 1 / span 1;
 }
 
 .row-span-2 {
@@ -792,12 +788,22 @@ video {
   background-image: url('../img/hero.jpeg');
 }
 
-.bg-contain {
-  background-size: contain;
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-4 {
@@ -955,11 +961,6 @@ video {
   color: rgb(254 209 0 / var(--tw-text-opacity));
 }
 
-.hover\:text-quaternary:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 0 0 / var(--tw-text-opacity));
-}
-
 .hover\:text-red-700:hover {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
@@ -994,10 +995,6 @@ video {
 
   .md\:order-1 {
     order: 1;
-  }
-
-  .md\:order-2 {
-    order: 2;
   }
 
   .md\:col-span-1 {
