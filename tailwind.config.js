@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-bg": "url('../img/hero.jpeg')",
+      },
       colors: {
         main_bg: "#f6f7f7",
         primary: "#fed100",
