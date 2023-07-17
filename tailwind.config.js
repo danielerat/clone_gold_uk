@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Roboto", "ui-sans-serif", "system-ui"],
+      },
       backgroundImage: {
         "hero-bg": "url('../img/hero.jpeg')",
       },
