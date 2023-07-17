@@ -8,16 +8,31 @@
     <script defer src="index.js"></script>
     <style></style>
   </head>
-  <body>
+  <body class="bg-main_bg">
     <header>
-      <nav class="flex justify-between bg-gray-600 px-9 py-6">
-        <div>
+      <nav class="flex justify-between bg-white px-9 py-6">
+        <div class="">
           <img src="img/logo.svg" alt="" class="h-full w-full" />
         </div>
         <div class="flex">
-          <figure class="flex gap-2">
-            <span>ICN</span>
-            <figcaption>Students & Staff</figcaption>
+          <figure class="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-10 w-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+              />
+            </svg>
+            <figcaption class="text-xs">
+              <p>Students&nbsp;&&nbsp;Staff</p>
+            </figcaption>
           </figure>
         </div>
       </nav>
@@ -31,96 +46,209 @@
     </section>
 
     <!-- Search Section -->
-    <section class="flex min-h-[200px] items-center border">
-      <div class="hidden border md:block">Search Icon</div>
-      <div class="grow border">
-        Search
-        <div class="flex">
-          <div>Search</div>
-          <div>Search</div>
-          <div>Search</div>
+    <section
+      class="mx-auto flex min-h-[200px] max-w-[700px] gap-3 py-20 lg:max-w-[1150px]"
+    >
+      <div class="hidden lg:block">
+        <img src="img/icon-search.svg" alt="" />
+      </div>
+      <div class="grow">
+        <p class="my-3 text-lg font-bold">Search:</p>
+        <div class="flex gap-5">
+          <div class="mb-4 flex items-center">
+            <input
+              checked
+              id="radio-1"
+              type="radio"
+              value=""
+              name="radio-search"
+              class="h-6 w-6 border-gray-300 bg-gray-100 text-gray-600 focus:ring-2 focus:ring-gray-500"
+            />
+            <label for="radio-1" class="ml-2 text-xl font-medium"
+              >Degrees</label
+            >
+          </div>
+          <div class="mb-4 flex items-center">
+            <input
+              checked
+              id="radio-1"
+              type="radio"
+              value=""
+              name="radio-search"
+              class="h-6 w-6 border-gray-300 bg-gray-100 text-gray-600 focus:ring-2 focus:ring-gray-500"
+            />
+            <label for="radio-1" class="ml-2 text-xl font-medium"
+              >Degrees</label
+            >
+          </div>
+          <div class="mb-4 flex items-center">
+            <input
+              checked
+              id="radio-1"
+              type="radio"
+              value=""
+              name="radio-search"
+              class="h-6 w-6 border-gray-300 bg-gray-100 text-gray-600 focus:ring-2 focus:ring-gray-500"
+            />
+            <label for="radio-1" class="ml-2 text-xl font-medium"
+              >Degrees</label
+            >
+          </div>
         </div>
-        <div><input type="text" /><button>Search</button></div>
+        <div class="flex gap-4">
+          <input
+            type="text"
+            class="w-full border border-secondary p-4"
+          /><button
+            class="border border-b-4 border-gray-600 bg-primary px-10 font-bold"
+          >
+            Search
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- Grid Section after search -->
 
-    <section class="grid min-h-screen grid-cols-5 gap-4">
-      <figure class="col-span-2">
-        <figcaption class="">
-          <div>
-            <img
-              src="img/pop-kat-double-crop-960.jpeg"
-              class="h-full w-full"
-              alt=""
-            />
+    <section class="grid min-h-screen grid-cols-2 gap-6 px-10 lg:grid-cols-4">
+      <figure class="relative col-span-2">
+        <div class="">
+          <img
+            src="img/pop-kat-double-crop-960.jpeg"
+            class="h-full w-full"
+            alt=""
+          />
+        </div>
+        <figcaption
+          class="relative -top-5 bottom-5 mx-auto h-fit w-11/12 cursor-pointer bg-white p-[5%] text-center md:absolute md:-right-3 md:bottom-10 md:top-auto md:w-1/2"
+        >
+          <p class="mb-4">
+            Clothing patent research reveals hidden history of women sport
+          </p>
+          <div class="flex justify-between border-t py-2">
+            <span class="text-tertiary hover:text-quaternary"
+              >plolitics of Patents</span
+            >
+            <span>-></span>
           </div>
         </figcaption>
       </figure>
-      <figure class="">
-        <figcaption class="">
-          <div>
-            <img
-              src="img/pop-kat-double-crop-960.jpeg"
-              class="h-full w-full"
-              alt=""
-            />
-          </div>
-        </figcaption>
+      <!-- Figure 2 -->
+      <figure
+        class="col-span-2 flex flex-col justify-between bg-white p-[5%] text-center md:col-span-1"
+      >
+        <div class="mt-3 flex flex-col gap-4">
+          <p class="font-bold">Lorem, ipsum dolor.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="flex justify-between border-t py-2">
+          <span class="text-tertiary hover:text-quaternary"
+            >plolitics of Patents</span
+          >
+          <span>-></span>
+        </div>
       </figure>
-      <figure class="">
-        <figcaption class="">
-          <div>
-            <img
-              src="img/pop-kat-double-crop-960.jpeg"
-              class="h-full w-full"
-              alt=""
-            />
+      <!-- Figure 3 -->
+      <figure class="col-span-2 md:col-span-1">
+        <div>
+          <img
+            src="img/pop-kat-double-crop-960.jpeg"
+            class="h-full w-full"
+            alt=""
+          />
+        </div>
+
+        <figcaption
+          class="relative -top-5 mx-auto w-11/12 cursor-pointer bg-white p-[5%] text-center"
+        >
+          <p class="mb-4">
+            Clothing patent research reveals hidden history of women sport
+          </p>
+          <div class="flex justify-between border-t py-2">
+            <span class="text-tertiary hover:text-quaternary"
+              >plolitics of Patents</span
+            >
+            <span>-></span>
           </div>
         </figcaption>
       </figure>
       <!-- Row 2 -->
-      <figure class="">
-        <figcaption class="">
-          <div>
-            <img
-              src="img/pop-kat-double-crop-960.jpeg"
-              class="h-full w-full"
-              alt=""
-            />
+      <figure class="col-span-2 md:col-span-1">
+        <div>
+          <img
+            src="img/pop-kat-double-crop-960.jpeg"
+            class="h-full w-full"
+            alt=""
+          />
+        </div>
+
+        <figcaption
+          class="relative -top-5 mx-auto w-11/12 cursor-pointer bg-white p-[5%] text-center"
+        >
+          <p class="mb-4">
+            Clothing patent research reveals hidden history of women sport
+          </p>
+          <div class="flex justify-between border-t py-2">
+            <span class="text-tertiary hover:text-quaternary"
+              >plolitics of Patents</span
+            >
+            <span>-></span>
           </div>
         </figcaption>
       </figure>
-      <figure class="">
-        <figcaption class="">
-          <div>
-            <img
-              src="img/pop-kat-double-crop-960.jpeg"
-              class="h-full w-full"
-              alt=""
-            />
+      <figure class="col-span-2 md:col-span-1">
+        <div>
+          <img
+            src="img/pop-kat-double-crop-960.jpeg"
+            class="h-full w-full"
+            alt=""
+          />
+        </div>
+
+        <figcaption
+          class="relative -top-5 mx-auto w-11/12 cursor-pointer bg-white p-[5%] text-center"
+        >
+          <p class="mb-4">
+            Clothing patent research reveals hidden history of women sport
+          </p>
+          <div class="flex justify-between border-t py-2">
+            <span class="text-tertiary hover:text-quaternary"
+              >plolitics of Patents</span
+            >
+            <span>-></span>
           </div>
         </figcaption>
       </figure>
-      <figure class="col-span-2">
-        <figcaption class="">
-          <div>
-            <img
-              src="img/pop-kat-double-crop-960.jpeg"
-              class="h-full w-full"
-              alt=""
-            />
+      <!-- Last -->
+      <figure class="relative col-span-2">
+        <div class="">
+          <img
+            src="img/pop-kat-double-crop-960.jpeg"
+            class="h-full w-full"
+            alt=""
+          />
+        </div>
+        <figcaption
+          class="relative -top-5 bottom-5 mx-auto h-fit w-11/12 cursor-pointer bg-white p-[5%] text-center md:absolute md:-right-3 md:bottom-10 md:top-auto md:w-1/2"
+        >
+          <p class="mb-4">
+            Clothing patent research reveals hidden history of women sport
+          </p>
+          <div class="flex justify-between border-t py-2">
+            <span class="text-tertiary hover:text-quaternary"
+              >plolitics of Patents</span
+            >
+            <span>-></span>
           </div>
         </figcaption>
       </figure>
     </section>
 
     <!-- News ANd Events -->
-    <section class="min-h-[300px] gap-5 text-center md:flex">
+    <section class="min-h-[300px] gap-5 text-center lg:flex">
       <div class="">
         <h1 class="py-10 text-3xl font-bold">News</h1>
-        <div class="flex gap-5">
+        <div class="gap-5 md:flex">
           <figure>
             <div>
               <img
@@ -151,7 +279,7 @@
       </div>
       <div class="">
         <h1 class="py-10 text-3xl font-bold">News</h1>
-        <div class="flex gap-5">
+        <div class="gap-5 md:flex">
           <figure>
             <div>
               <img
